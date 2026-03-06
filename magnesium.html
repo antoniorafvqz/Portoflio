@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mg Staple Characterization | ARVP</title>
+  <link rel="stylesheet" href="project.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">ARVP</a>
+    <a href="index.html#projects" class="nav-back">All Projects</a>
+  </nav>
+
+  <div class="proj-hero">
+    <div class="proj-label">Ethicon-Sponsored Research · Jan 2026 – Present</div>
+    <h1>Bioresorbable Mg Staple<br><em>Characterization</em></h1>
+    <div class="proj-meta">
+      <div class="meta-item">Institution <span>Texas A&M Biomedical Engineering</span></div>
+      <div class="meta-item">Sponsor <span>Ethicon (J&J MedTech)</span></div>
+      <div class="meta-item">Status <span>Active</span></div>
+    </div>
+    <div class="proj-tags">
+      <span>Corrosion Testing</span><span>Tensile Testing</span><span>Stress–Strain Analysis</span>
+      <span>Bioresorbable Implants</span><span>Fixture Design</span><span>Python</span>
+    </div>
+    <p class="proj-summary">Conducting corrosion-mechanical coupled testing on bioabsorbable magnesium surgical staples to characterize how progressive degradation in simulated gastric fluid affects structural integrity — with direct relevance to bioresorbable cardiovascular implant design.</p>
+  </div>
+
+  <div class="proj-content">
+
+    <div class="proj-section">
+      <div class="proj-section-label">Background</div>
+      <h2>Why <em>magnesium?</em></h2>
+      <p>Bioresorbable implants eliminate the need for a second surgery to remove hardware — the device degrades naturally in the body over time. Magnesium alloys are promising candidates because they are biocompatible, mechanically strong, and degrade at a controlled rate.</p>
+      <p>For surgical staples specifically, the staple must maintain structural integrity long enough to hold tissue together during healing, then degrade safely. The critical question is: <strong>how does corrosion affect the staple's mechanical performance over time?</strong> And since the bend is the most stressed region, what are the limits of that geometry?</p>
+      <p>This research is sponsored by Ethicon — a Johnson & Johnson MedTech company and one of the world's leading surgical device manufacturers.</p>
+    </div>
+
+    <div class="proj-section">
+      <div class="proj-section-label">Test Setup</div>
+      <h2>Targeted corrosion <em>at the bend.</em></h2>
+      <p>The test bed is specifically designed to expose <strong>only the bent tip of the staple wire</strong> to simulated gastric fluid (SGF) — isolating corrosion to the most mechanically critical region. The rest of the wire remains dry.</p>
+      <p>The wire is held in a <strong>V-shape by four contact points</strong>, suspending the bent tip precisely over a glass container filled with SGF. This geometry ensures repeatable positioning across all test samples without introducing clamping stresses that would confound the corrosion data.</p>
+
+      <div class="proj-image-grid">
+        <img src="corrosion_testbed_iso.png" alt="Corrosion Test Bed — Isometric View"/>
+        <img src="corrosion_testbed_section.png" alt="Corrosion Test Bed — Section View showing V-wire contact"/>
+      </div>
+      <p class="img-caption">Left: Isometric view of the corrosion test bed. Right: Section view showing the 4-point V-shape wire support and SGF container below.</p>
+
+      <div class="callout">
+        <p><strong>Design rationale:</strong> Targeting only the bend tip mirrors the clinical failure mode — in vivo, the bent region experiences the highest stress concentration and is where mechanical failure and accelerated corrosion are most likely to initiate. Isolating this region gives us data that's directly relevant to implant performance.</p>
+      </div>
+    </div>
+
+    <div class="proj-section">
+      <div class="proj-section-label">Mechanical Testing</div>
+      <h2>Stress–strain analysis <em>& bend radius limits.</em></h2>
+      <p>Following corrosion exposure, staples are subjected to <strong>tensile stress–strain testing</strong> to characterize how degradation has affected mechanical properties. Key measurements include elastic limit, yield behavior, failure point, and failure mode (elastic vs. inelastic regime).</p>
+      <p>A parallel workstream determines the <strong>minimum and maximum bend radius constraints</strong> by testing staples bent to varying geometries. This defines the geometric envelope within which the staple can be formed without compromising structural integrity — critical data for the manufacturing process.</p>
+
+      <div class="stats-row">
+        <div class="stat-item">
+          <span class="stat-val">3</span>
+          <span class="stat-lbl">Bend geometries tested</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-val">SGF</span>
+          <span class="stat-lbl">Simulated gastric fluid</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-val">Mg</span>
+          <span class="stat-lbl">Bioresorbable alloy</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-section">
+      <div class="proj-section-label">Relevance to Cardiovascular Devices</div>
+      <h2>Why this matters for <em>structural heart.</em></h2>
+      <p>The corrosion-mechanical coupling framework used here is directly analogous to how <strong>nitinol fatigue and corrosion behavior is characterized in TAVR frames and transcatheter delivery systems</strong>. Nitinol — the dominant material in structural heart devices — undergoes similar degradation-performance tradeoffs that must be rigorously characterized before clinical use.</p>
+      <p>The skills developed here — designing targeted corrosion fixtures, running tensile characterization, and analyzing failure modes in degradable metallic implants — translate directly to the bench-top testing workflows used in cardiovascular device R&D.</p>
+    </div>
+
+  </div>
+
+  <div class="next-project">
+    <div>
+      <div class="next-label">Next Project</div>
+      <a href="larm.html" class="next-title">LARM — Laboratory Robotic Manipulator →</a>
+    </div>
+    <a href="larm.html" class="next-arrow">→</a>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <span>Antonio Rafael Vazquez Pantoja</span>
+      <span>© 2026</span>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LARM — Lab Robotic Manipulator | ARVP</title>
+  <link rel="stylesheet" href="project.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">ARVP</a>
+    <a href="index.html#projects" class="nav-back">All Projects</a>
+  </nav>
+
+  <div class="proj-hero">
+    <div class="proj-label">Turtle Robotics · Sept 2025 – Present</div>
+    <h1>LARM — Laboratory<br><em>Robotic Manipulator</em></h1>
+    <div class="proj-meta">
+      <div class="meta-item">Team <span>Turtle Robotics, Texas A&M</span></div>
+      <div class="meta-item">Status <span>Active</span></div>
+      <div class="meta-item">Role <span>Lead Mechanical Design — Gripper</span></div>
+    </div>
+    <div class="proj-tags">
+      <span>SolidWorks</span><span>Gear Design</span><span>Tolerance Stack-up</span>
+      <span>Silicone Integration</span><span>Servo Actuation</span><span>Wet Lab</span>
+    </div>
+    <p class="proj-summary">Leading end-to-end mechanical design of a servo-actuated gripper for manipulation of 500 mL laboratory beakers in wet lab environments — engineered for reliable, repeatable actuation on wet glass surfaces.</p>
+  </div>
+
+  <div class="proj-content">
+
+    <div class="proj-section">
+      <div class="proj-section-label">Problem</div>
+      <h2>Gripping <em>wet glass.</em></h2>
+      <p>Laboratory robotic manipulators operating in wet lab environments face a deceptively difficult challenge: <strong>glass beakers become significantly harder to grip when wet</strong>. Standard gripper designs rely on normal force alone, but on a wet glass surface the friction coefficient drops substantially — requiring either dangerously high grip forces or a fundamentally different contact strategy.</p>
+      <p>The gripper also needs to handle 500 mL beakers reliably and repeatedly without recalibration — in a lab context, inconsistent actuation wastes time and risks dropping samples.</p>
+    </div>
+
+    <div class="proj-section">
+      <div class="proj-section-label">Transmission Design</div>
+      <h2>3-gear <em>synchronization.</em></h2>
+      <p>The claw arms must open and close symmetrically — if one arm moves faster than the other, the gripper skews and loses its grip geometry. I designed a <strong>3-gear transmission system</strong> where a central driver gear meshes with two identical driven gears mounted on each claw arm, ensuring perfectly synchronized motion.</p>
+      <p>The transmission also provides <strong>torque amplification</strong> from the servo motor — the smaller driver gear turns the larger claw gears, multiplying the output torque at the contact surface. This means the servo doesn't need to work as hard to achieve a secure grip, reducing current draw and heat.</p>
+
+      <img src="larm_gear.png" alt="LARM Transmission Gear — SolidWorks CAD" class="proj-image"/>
+      <p class="img-caption">Spur gear for the claw transmission — Module 2, 22 teeth, 12mm face width, 608ZZ bearing bore</p>
+
+      <div class="callout">
+        <p><strong>Gear specs:</strong> Module 2 spur gears, 22 teeth on claw gears, 20° pressure angle, 12mm face width. Module 2 was selected for sufficient tooth strength at the 20 kg·cm servo load on 3D printed plastic — anything below Module 1.5 risks tooth stripping under shock loading.</p>
+      </div>
+    </div>
+
+    <div class="proj-section">
+      <div class="proj-section-label">Contact Design</div>
+      <h2>Slip analysis <em>& silicone pads.</em></h2>
+      <p>I evaluated the slip risk on wet glass surfaces by analyzing the friction coefficient of common 3D printed materials against wet borosilicate glass. The results confirmed that PLA and PETG contact surfaces would slip under the required grip force — requiring a material intervention.</p>
+      <p><strong>Silicone contact pads</strong> were integrated into the claw face design. Silicone maintains a high friction coefficient even on wet glass surfaces (μ ≈ 0.6–0.8 vs ~0.2 for PLA on wet glass), reducing the required normal force to achieve a secure grip and protecting the beaker surface from hard contact stress.</p>
+      <p>The <strong>claw curvature was also designed to conform to the cylindrical geometry</strong> of 500 mL beakers — distributing the contact force across a larger surface area and reducing stress concentration at the contact points.</p>
+    </div>
+
+    <div class="proj-section">
+      <div class="proj-section-label">CAD & Tolerancing</div>
+      <h2>Tolerance stack-ups <em>& gear meshing.</em></h2>
+      <p>3D printed assemblies accumulate dimensional error across every component — shaft holes, gear bores, housing walls. If these tolerances stack unfavorably, gears bind or mesh too loosely. I performed <strong>tolerance stack-up analysis in SolidWorks</strong> to ensure the worst-case dimensional variation still produced acceptable gear mesh quality.</p>
+      <p>Center-to-center distance between meshing gears is the most sensitive parameter — it must equal (T_driver + T_driven) / 2 × module exactly for correct mesh. The housing geometry was designed with this constraint as the primary driver, with all other features referenced from the shaft hole positions.</p>
+    </div>
+
+  </div>
+
+  <div class="next-project">
+    <div>
+      <div class="next-label">Next Project</div>
+      <a href="angel.html" class="next-title">ANGEL Soft Robotic Gripper →</a>
+    </div>
+    <a href="angel.html" class="next-arrow">→</a>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <span>Antonio Rafael Vazquez Pantoja</span>
+      <span>© 2026</span>
+    </div>
+  </footer>
+
+</body>
+</html>

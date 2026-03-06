@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ANGEL Gripper | ARVP</title>
+  <link rel="stylesheet" href="project.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">ARVP</a>
+    <a href="index.html#projects" class="nav-back">All Projects</a>
+  </nav>
+
+  <div class="proj-hero">
+    <div class="proj-label">Published Research · June 2025 – Present</div>
+    <h1>ANGEL — Soft Robotic<br><em>Fruit Harvesting Gripper</em></h1>
+    <div class="proj-meta">
+      <div class="meta-item">Institution <span>Texas A&M Mechanical Engineering</span></div>
+      <div class="meta-item">Status <span>Published</span></div>
+      <div class="meta-item">Role <span>CAD Design, Prototyping, Experimental Testing</span></div>
+    </div>
+    <div class="proj-tags">
+      <span>Publication</span><span>TPU 3D Printing</span><span>SolidWorks</span>
+      <span>Cable-Driven</span><span>Soft Robotics</span><span>Experimental Validation</span>
+    </div>
+    <p class="proj-summary">Co-authored peer-reviewed publication on a drawstring-inspired, cable-driven soft gripper for gentle fruit harvesting — achieving 0% immediate damage rate across 56 tomatoes with a lightweight, low-complexity design.</p>
+  </div>
+
+  <div class="proj-content">
+
+    <div class="proj-section">
+      <div class="proj-section-label">Overview</div>
+      <h2>Gentle grasping <em>without sensors.</em></h2>
+      <p>Conventional robotic grippers damage soft fruits through concentrated pressure at rigid contact points. ANGEL takes a fundamentally different approach — inspired by a drawstring bag, two TPU-based pockets constrict around the fruit when cables are pulled, distributing force uniformly across the surface.</p>
+      <p>The result is a gripper that handles fruits of varying sizes and shapes with <strong>zero immediate damage</strong> and under 9% minor bruising after five days — outperforming machine-based harvesting (typically 20–29% damage rate) with fewer components and simpler control than competing designs.</p>
+
+      <video class="proj-video" autoplay muted loop playsinline>
+        <source src="angel_gripper_test.mp4" type="video/mp4">
+      </video>
+      <p class="img-caption">Physical test — gripper opening and closing cycle</p>
+    </div>
+
+    <div class="proj-section">
+      <div class="proj-section-label">My Contributions</div>
+      <h2>Spool design, <em>pockets & testing.</em></h2>
+      <p>My work focused on three areas: <strong>CAD design of structural components</strong>, <strong>TPU pocket iteration</strong>, and <strong>experimental trial execution</strong>.</p>
+      <p>For the CAD work, I designed the <strong>motor spool geometry</strong> — the spools wind the steel cables that actuate the pockets, and their geometry directly controls how the cable tension is applied during closing. I also designed the <strong>cable routing architecture</strong> and primary structural components of the gripper body.</p>
+      <p>For the pocket work, I designed and iterated <strong>three TPU pocket geometries</strong> optimized for different performance characteristics: cushioning (increased tube diameter), flexure (perforations along the contact area), and contact area (thin solid fill between tubes). Each variant was 3D printed in TPU 95A and evaluated for grip stability and surface damage.</p>
+      <p>I also ran the <strong>experimental trials</strong> — 56 tomatoes across two size groups, recording immediate damage and 5-day bruise rates. Setting up repeatable test conditions across that many samples required careful protocol discipline.</p>
+    </div>
+
+    <div class="proj-section">
+      <div class="proj-section-label">Results</div>
+      <h2>Validated <em>performance.</em></h2>
+
+      <div class="stats-row">
+        <div class="stat-item">
+          <span class="stat-val">56</span>
+          <span class="stat-lbl">Tomatoes tested</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-val">0%</span>
+          <span class="stat-lbl">Immediate damage rate</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-val">&lt;9%</span>
+          <span class="stat-lbl">Bruise rate at 5 days</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-val">9</span>
+          <span class="stat-lbl">Total components</span>
+        </div>
+      </div>
+
+      <div class="callout">
+        <p><strong>For context:</strong> machine-based tomato harvesting typically produces 20–29% damage rates. ANGEL achieves less than half that with a simpler, lower-cost design that requires no force sensors or pneumatic actuation.</p>
+      </div>
+    </div>
+
+    <div class="proj-section">
+      <div class="proj-section-label">Publication</div>
+      <h2>Peer-reviewed <em>output.</em></h2>
+      <p>Patel, D., <strong>Vazquez Pantoja, A. R.</strong>, Lei, J., Lee, K., Liang, X., & Zheng, M. (2025). <em>ANGEL: A Novel Gripper for Versatile and Light-touch Fruit Harvesting.</em></p>
+      <p>Having a co-authored publication as a sophomore is something I'm proud of — it reflects the depth of contribution required to be included as an author, and demonstrates that the design and testing work was substantive enough to merit academic recognition.</p>
+    </div>
+
+  </div>
+
+  <div class="next-project">
+    <div>
+      <div class="next-label">Next Project</div>
+      <a href="artificial-heart.html" class="next-title">Artificial Heart System →</a>
+    </div>
+    <a href="artificial-heart.html" class="next-arrow">→</a>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <span>Antonio Rafael Vazquez Pantoja</span>
+      <span>© 2026</span>
+    </div>
+  </footer>
+
+</body>
+</html>

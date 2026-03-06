@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RF Balloon Catheter — HLHS | ARVP</title>
+  <link rel="stylesheet" href="project.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">ARVP</a>
+    <a href="index.html#projects" class="nav-back">All Projects</a>
+  </nav>
+
+  <div class="proj-hero">
+    <div class="proj-label">Cardiovascular Devices · Sept 2025 – Jan 2026</div>
+    <h1>RF Balloon Catheter<br><em>for Fetal HLHS</em></h1>
+    <div class="proj-meta">
+      <div class="meta-item">Institution <span>Texas A&M Biomedical Engineering</span></div>
+      <div class="meta-item">Status <span>On Hold</span></div>
+      <div class="meta-item">Role <span>Device Assembly & Test Bed Design</span></div>
+    </div>
+    <div class="proj-tags">
+      <span>Catheter Assembly</span><span>PCB Soldering</span><span>3D Printing</span>
+      <span>Iterative Design</span><span>Porcine Tissue Testing</span><span>RF Energy</span>
+    </div>
+    <p class="proj-summary">Designed and fabricated test beds to evaluate RF energy delivery from balloon catheter prototypes targeting fetal hypoplastic left heart syndrome — iterating through three generations to resolve tissue contact and tearing issues.</p>
+  </div>
+
+  <div class="proj-content">
+
+    <div class="proj-section">
+      <div class="proj-section-label">Background</div>
+      <h2>What is <em>HLHS?</em></h2>
+      <p>Hypoplastic Left Heart Syndrome (HLHS) is a critical congenital heart defect where the left side of the heart is severely underdeveloped. In fetal interventions, radiofrequency (RF) energy can be used to perforate or ablate tissue in the developing heart to improve outcomes before birth.</p>
+      <p>The challenge is delivering controlled RF energy precisely to cardiac tissue in a highly constrained, fluid-filled environment — without damaging surrounding structures. This project focused on developing and testing the catheter hardware and test infrastructure to evaluate whether RF energy was sufficient to denature tissue even when submerged in aqueous conditions.</p>
+    </div>
+
+    <div class="proj-section">
+      <div class="proj-section-label">My Role</div>
+      <h2>Device assembly <em>& test design.</em></h2>
+      <p>My primary responsibilities were <strong>assembling the RF balloon catheter prototypes</strong> and <strong>designing the test beds</strong> used to evaluate them. For assembly, I soldered RF PCB components directly to the balloon outer layer — a delicate process requiring precise control to avoid damaging the balloon membrane while achieving reliable electrical connection.</p>
+      <p>The test beds were designed to hold porcine cardiac tissue samples in a repeatable position while the catheter delivered RF energy, allowing us to assess whether denaturing occurred consistently under aqueous conditions.</p>
+    </div>
+
+    <div class="proj-section">
+      <div class="proj-section-label">Design Iterations</div>
+      <h2>Three generations <em>of test beds.</em></h2>
+
+      <div class="iteration-grid">
+        <div class="iteration-card">
+          <div class="iteration-num">Version 01</div>
+          <h4>Initial Rectangular Design</h4>
+          <p>Flat rectangular platform for tissue mounting. Identified issues with uneven load distribution causing tissue tearing at edges and inconsistent PCB contact.</p>
+        </div>
+        <div class="iteration-card">
+          <div class="iteration-num">Version 02</div>
+          <h4>Refined Rectangular</h4>
+          <p>Attempted to address contact issues through positional adjustments. Tearing and contact inconsistency persisted — root cause identified as geometry, not positioning.</p>
+        </div>
+        <div class="iteration-card active">
+          <div class="iteration-num">Version 03 — Final</div>
+          <h4>Circular Geometry + Silicone</h4>
+          <p>Transitioned to circular geometry to distribute load evenly across the tissue sample. Added silicone fixturing to improve tissue positioning and PCB contact repeatability.</p>
+        </div>
+      </div>
+
+      <img src="hlhs_testbed_v3.png" alt="HLHS Test Bed Version 3 — Circular Design" class="proj-image"/>
+      <p class="img-caption">Version 3 test bed — circular geometry with 4-post elevation and silicone fixturing</p>
+
+      <div class="callout">
+        <p><strong>Key insight:</strong> The rectangular geometry concentrated stress at the tissue corners during catheter contact, causing tearing that invalidated results. Switching to a circular platform distributed the contact force uniformly around the perimeter — eliminating tearing and improving RF energy transfer consistency.</p>
+      </div>
+    </div>
+
+    <div class="proj-section">
+      <div class="proj-section-label">Testing Methodology</div>
+      <h2>Aqueous RF <em>energy evaluation.</em></h2>
+      <p>A core question was whether RF energy could effectively denature tissue even when the catheter was submerged in water — simulating the fluid-filled fetal cardiac environment. The test beds were designed to hold porcine heart tissue samples while the RF PCB on the balloon outer layer delivered energy.</p>
+      <p>Porcine tissue was used as the test substrate due to its mechanical and biological similarity to human fetal cardiac tissue. Bench-top testing was performed before advancing to tissue-based evaluation, establishing baseline electrical performance of the catheter assembly.</p>
+    </div>
+
+    <div class="proj-section">
+      <div class="proj-section-label">Skills Developed</div>
+      <h2>What I <em>learned.</em></h2>
+      <p>This project was my first exposure to hands-on cardiovascular device development. Soldering RF PCBs to flexible balloon membranes required a level of precision I hadn't worked with before — the margin for error is much smaller than standard PCB work.</p>
+      <p>More importantly, the iterative test bed design process taught me how to diagnose failure modes systematically. The transition from rectangular to circular geometry wasn't intuitive — it came from carefully analyzing where and how the tissue was failing, then tracing that back to a geometric root cause. That kind of structured problem-solving is directly applicable to structural heart device development.</p>
+    </div>
+
+  </div>
+
+  <div class="next-project">
+    <div>
+      <div class="next-label">Next Project</div>
+      <a href="magnesium.html" class="next-title">Bioresorbable Mg Staple Characterization →</a>
+    </div>
+    <a href="magnesium.html" class="next-arrow">→</a>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <span>Antonio Rafael Vazquez Pantoja</span>
+      <span>© 2026</span>
+    </div>
+  </footer>
+
+</body>
+</html>
