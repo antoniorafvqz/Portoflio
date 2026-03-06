@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>LARM — Lab Robotic Manipulator | ARVP</title>
   <link rel="stylesheet" href="project.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
@@ -15,6 +15,83 @@
   </nav>
 
   <div class="proj-hero">
+    <!-- Engineering drawing: spur gear detail -->
+    <svg class="proj-hero-drawing" viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect x="4" y="4" width="272" height="212" fill="none" stroke="#c0392b" stroke-width="0.6" opacity="0.15"/>
+      <rect x="8" y="8" width="264" height="204" fill="none" stroke="#c0392b" stroke-width="0.3" opacity="0.08"/>
+      <text x="14" y="22" font-family="monospace" font-size="7" fill="#c0392b" opacity="0.3">CLAW GEAR — FRONT VIEW / SECTION A-A</text>
+      <!-- FRONT VIEW — gear -->
+      <!-- Addendum circle -->
+      <circle cx="90" cy="110" r="62" fill="none" stroke="#c0392b" stroke-width="0.8" opacity="0.2"/>
+      <!-- Pitch circle (dashed) -->
+      <circle cx="90" cy="110" r="52" fill="none" stroke="#c0392b" stroke-width="0.6" stroke-dasharray="4,2" opacity="0.18"/>
+      <!-- Root circle -->
+      <circle cx="90" cy="110" r="44" fill="none" stroke="#c0392b" stroke-width="1.3" opacity="0.28"/>
+      <!-- Bore -->
+      <circle cx="90" cy="110" r="11" fill="none" stroke="#c0392b" stroke-width="1" opacity="0.28"/>
+      <!-- 22 teeth suggestion (every ~16 degrees) -->
+      <g stroke="#c0392b" stroke-width="0.9" opacity="0.22" fill="none">
+        <path d="M88,48 L85,48 L84,50 L88,62 L92,62 L96,50 L95,48Z"/>
+        <path d="M116,52 L114,50 L112,51 L108,63 L111,65 L121,58 L122,56Z"/>
+        <path d="M138,64 L136,62 L134,64 L126,74 L129,77 L140,72 L141,69Z"/>
+        <path d="M152,84 L150,82 L148,84 L144,96 L147,98 L157,91 L157,88Z"/>
+        <path d="M153,107 L152,104 L150,104 L144,115 L147,117 L157,112 L157,109Z"/>
+        <path d="M144,130 L143,127 L141,128 L132,138 L134,141 L145,138 L146,135Z"/>
+        <path d="M128,149 L127,146 L125,147 L113,154 L115,157 L127,156 L128,154Z"/>
+        <path d="M106,160 L106,157 L104,157 L96,166 L98,168 L110,165 L111,163Z"/>
+        <path d="M83,163 L83,166 L85,167 L92,158 L90,156 L79,160 L79,162Z"/>
+        <path d="M61,156 L61,159 L63,160 L73,153 L72,150 L60,151 L59,154Z"/>
+        <path d="M44,143 L45,146 L47,146 L54,136 L51,134 L41,138 L40,141Z"/>
+        <path d="M33,123 L35,126 L37,125 L40,113 L37,111 L27,117 L27,120Z"/>
+        <path d="M30,100 L32,103 L34,102 L40,91 L37,89 L27,93 L27,96Z"/>
+        <path d="M36,77 L39,79 L41,78 L44,66 L41,64 L31,70 L31,73Z"/>
+        <path d="M51,59 L54,60 L55,59 L55,47 L52,46 L43,53 L43,56Z"/>
+        <path d="M70,49 L72,51 L74,50 L78,38 L75,37 L65,43 L65,46Z"/>
+      </g>
+      <!-- Centerlines -->
+      <line x1="14" y1="110" x2="166" y2="110" stroke="#c0392b" stroke-width="0.5" stroke-dasharray="6,2,1,2" opacity="0.18"/>
+      <line x1="90" y1="30" x2="90" y2="190" stroke="#c0392b" stroke-width="0.5" stroke-dasharray="6,2,1,2" opacity="0.18"/>
+      <!-- Section cut line A-A -->
+      <line x1="90" y1="170" x2="90" y2="184" stroke="#c0392b" stroke-width="1" opacity="0.22"/>
+      <text x="84" y="183" font-family="monospace" font-size="8" fill="#c0392b" opacity="0.28">A</text>
+      <polygon points="90,185 87,179 93,179" fill="#c0392b" opacity="0.22"/>
+      <!-- Dims -->
+      <!-- PCD -->
+      <line x1="90" y1="110" x2="142" y2="110" stroke="#c0392b" stroke-width="0.5" opacity="0.2"/>
+      <line x1="130" y1="106" x2="130" y2="114" stroke="#c0392b" stroke-width="0.5" opacity="0.18"/>
+      <text x="133" y="108" font-family="monospace" font-size="5.5" fill="#c0392b" opacity="0.25">Ø104 PCD</text>
+      <!-- Bore dim -->
+      <line x1="90" y1="110" x2="101" y2="110" stroke="#c0392b" stroke-width="0.5" opacity="0.18"/>
+      <text x="104" y="122" font-family="monospace" font-size="5.5" fill="#c0392b" opacity="0.25">Ø22.2 BORE</text>
+      <line x1="101" y1="110" x2="110" y2="118" stroke="#c0392b" stroke-width="0.4" opacity="0.16"/>
+      <!-- Module / teeth callout -->
+      <line x1="152" y1="52" x2="168" y2="40" stroke="#c0392b" stroke-width="0.5" opacity="0.18"/>
+      <text x="170" y="38" font-family="monospace" font-size="5.5" fill="#c0392b" opacity="0.28">M2 · Z22</text>
+      <text x="170" y="46" font-family="monospace" font-size="5" fill="#c0392b" opacity="0.22">PA 20°</text>
+      <!-- SECTION VIEW (right side) -->
+      <text x="186" y="70" font-family="monospace" font-size="6" fill="#c0392b" opacity="0.26">SECT. A-A</text>
+      <rect x="184" y="75" width="80" height="70" rx="1" fill="none" stroke="#c0392b" stroke-width="1.1" opacity="0.22"/>
+      <!-- Face profile in section -->
+      <line x1="196" y1="75" x2="196" y2="145" stroke="#c0392b" stroke-width="1.8" opacity="0.24"/>
+      <line x1="252" y1="75" x2="252" y2="145" stroke="#c0392b" stroke-width="1.8" opacity="0.24"/>
+      <!-- Bore hole in section -->
+      <line x1="184" y1="99" x2="264" y2="99" stroke="#c0392b" stroke-width="0.5" stroke-dasharray="5,2,1,2" opacity="0.15"/>
+      <line x1="184" y1="121" x2="264" y2="121" stroke="#c0392b" stroke-width="0.5" stroke-dasharray="5,2,1,2" opacity="0.15"/>
+      <!-- Face width dim -->
+      <line x1="196" y1="152" x2="252" y2="152" stroke="#c0392b" stroke-width="0.5" opacity="0.18"/>
+      <line x1="196" y1="148" x2="196" y2="156" stroke="#c0392b" stroke-width="0.5" opacity="0.18"/>
+      <line x1="252" y1="148" x2="252" y2="156" stroke="#c0392b" stroke-width="0.5" opacity="0.18"/>
+      <text x="224" y="163" font-family="monospace" font-size="5.5" fill="#c0392b" opacity="0.25" text-anchor="middle">12.0 mm</text>
+      <text x="224" y="170" font-family="monospace" font-size="5" fill="#c0392b" opacity="0.18" text-anchor="middle">FACE WIDTH</text>
+      <!-- Title block -->
+      <rect x="140" y="182" width="130" height="30" fill="none" stroke="#c0392b" stroke-width="0.5" opacity="0.14"/>
+      <line x1="140" y1="194" x2="270" y2="194" stroke="#c0392b" stroke-width="0.4" opacity="0.1"/>
+      <line x1="200" y1="182" x2="200" y2="212" stroke="#c0392b" stroke-width="0.4" opacity="0.1"/>
+      <text x="144" y="191" font-family="monospace" font-size="5" fill="#c0392b" opacity="0.22">CLAW-GEAR-001</text>
+      <text x="144" y="202" font-family="monospace" font-size="5" fill="#c0392b" opacity="0.18">LARM / REV D</text>
+      <text x="204" y="191" font-family="monospace" font-size="5" fill="#c0392b" opacity="0.22">SCALE 1:1</text>
+      <text x="204" y="202" font-family="monospace" font-size="5" fill="#c0392b" opacity="0.18">PETG / FDM</text>
+    </svg>
     <div class="proj-label">Turtle Robotics · Sept 2025 – Present</div>
     <h1>LARM — Laboratory<br><em>Robotic Manipulator</em></h1>
     <div class="proj-meta">

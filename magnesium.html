@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mg Staple Characterization | ARVP</title>
   <link rel="stylesheet" href="project.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
@@ -15,6 +15,66 @@
   </nav>
 
   <div class="proj-hero">
+    <!-- Engineering drawing: corrosion test fixture — front view -->
+    <svg class="proj-hero-drawing" viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect x="4" y="4" width="272" height="212" fill="none" stroke="#c0392b" stroke-width="0.6" opacity="0.15"/>
+      <rect x="8" y="8" width="264" height="204" fill="none" stroke="#c0392b" stroke-width="0.3" opacity="0.08"/>
+      <text x="14" y="22" font-family="monospace" font-size="7" fill="#c0392b" opacity="0.3">CORROSION FIXTURE — FRONT VIEW</text>
+      <!-- Main platform -->
+      <rect x="30" y="60" width="180" height="18" rx="1" fill="none" stroke="#c0392b" stroke-width="1.3" opacity="0.28"/>
+      <!-- Perforations on platform -->
+      <g stroke="#c0392b" stroke-width="0.5" opacity="0.15">
+        <line x1="46" y1="62" x2="46" y2="76"/><line x1="58" y1="62" x2="58" y2="76"/>
+        <line x1="70" y1="62" x2="70" y2="76"/><line x1="82" y1="62" x2="82" y2="76"/>
+        <line x1="94" y1="62" x2="94" y2="76"/><line x1="106" y1="62" x2="106" y2="76"/>
+        <line x1="118" y1="62" x2="118" y2="76"/><line x1="130" y1="62" x2="130" y2="76"/>
+        <line x1="142" y1="62" x2="142" y2="76"/><line x1="154" y1="62" x2="154" y2="76"/>
+        <line x1="166" y1="62" x2="166" y2="76"/><line x1="178" y1="62" x2="178" y2="76"/>
+        <line x1="190" y1="62" x2="190" y2="76"/>
+      </g>
+      <!-- 4 legs -->
+      <rect x="36" y="78" width="12" height="44" rx="1" fill="none" stroke="#c0392b" stroke-width="1" opacity="0.22"/>
+      <rect x="68" y="78" width="12" height="44" rx="1" fill="none" stroke="#c0392b" stroke-width="1" opacity="0.22"/>
+      <rect x="160" y="78" width="12" height="44" rx="1" fill="none" stroke="#c0392b" stroke-width="1" opacity="0.22"/>
+      <rect x="192" y="78" width="12" height="44" rx="1" fill="none" stroke="#c0392b" stroke-width="1" opacity="0.22"/>
+      <!-- V-wire shape -->
+      <polyline points="44,60 90,46 120,46 156,60" fill="none" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round" opacity="0.32"/>
+      <!-- Bent tip hanging down into SGF -->
+      <path d="M120,46 C122,50 124,54 120,58" fill="none" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round" opacity="0.32"/>
+      <!-- Contact points callout circles -->
+      <circle cx="44" cy="60" r="4" fill="none" stroke="#c0392b" stroke-width="0.8" opacity="0.28"/>
+      <circle cx="90" cy="46" r="4" fill="none" stroke="#c0392b" stroke-width="0.8" opacity="0.28"/>
+      <circle cx="156" cy="60" r="4" fill="none" stroke="#c0392b" stroke-width="0.8" opacity="0.28"/>
+      <!-- SGF container -->
+      <rect x="98" y="108" width="44" height="28" rx="2" fill="none" stroke="#c0392b" stroke-width="1.1" opacity="0.25"/>
+      <!-- Fluid level line -->
+      <line x1="100" y1="118" x2="140" y2="118" stroke="#c0392b" stroke-width="0.7" stroke-dasharray="3,2" opacity="0.18"/>
+      <!-- Wave suggestion in SGF -->
+      <path d="M102,122 C108,120 112,124 118,122 C124,120 128,124 138,122" fill="none" stroke="#c0392b" stroke-width="0.6" opacity="0.14"/>
+      <!-- Leader lines -->
+      <line x1="120" y1="58" x2="180" y2="48" stroke="#c0392b" stroke-width="0.5" opacity="0.18"/>
+      <text x="182" y="46" font-family="monospace" font-size="5.5" fill="#c0392b" opacity="0.28">BEND TIP</text>
+      <text x="182" y="53" font-family="monospace" font-size="5" fill="#c0392b" opacity="0.22">(SGF EXPOSURE)</text>
+      <line x1="120" y1="118" x2="180" y2="110" stroke="#c0392b" stroke-width="0.5" opacity="0.18"/>
+      <text x="182" y="108" font-family="monospace" font-size="5.5" fill="#c0392b" opacity="0.28">SGF BATH</text>
+      <line x1="90" y1="46" x2="90" y2="30" stroke="#c0392b" stroke-width="0.5" opacity="0.16"/>
+      <text x="60" y="28" font-family="monospace" font-size="5.5" fill="#c0392b" opacity="0.26">4-PT V-WIRE SUPPORT</text>
+      <!-- Centerline -->
+      <line x1="14" y1="95" x2="266" y2="95" stroke="#c0392b" stroke-width="0.5" stroke-dasharray="6,2,1,2" opacity="0.14"/>
+      <!-- Overall height dim -->
+      <line x1="18" y1="60" x2="18" y2="122" stroke="#c0392b" stroke-width="0.5" opacity="0.18"/>
+      <line x1="14" y1="60" x2="22" y2="60" stroke="#c0392b" stroke-width="0.5" opacity="0.18"/>
+      <line x1="14" y1="122" x2="22" y2="122" stroke="#c0392b" stroke-width="0.5" opacity="0.18"/>
+      <text x="2" y="94" font-family="monospace" font-size="5" fill="#c0392b" opacity="0.22" transform="rotate(-90,6,94)">80.0</text>
+      <!-- Title block -->
+      <rect x="140" y="182" width="130" height="30" fill="none" stroke="#c0392b" stroke-width="0.5" opacity="0.14"/>
+      <line x1="140" y1="194" x2="270" y2="194" stroke="#c0392b" stroke-width="0.4" opacity="0.1"/>
+      <line x1="200" y1="182" x2="200" y2="212" stroke="#c0392b" stroke-width="0.4" opacity="0.1"/>
+      <text x="144" y="191" font-family="monospace" font-size="5" fill="#c0392b" opacity="0.22">CORR-FIX-001</text>
+      <text x="144" y="202" font-family="monospace" font-size="5" fill="#c0392b" opacity="0.18">TAMU BME / REV B</text>
+      <text x="204" y="191" font-family="monospace" font-size="5" fill="#c0392b" opacity="0.22">SCALE 1:5</text>
+      <text x="204" y="202" font-family="monospace" font-size="5" fill="#c0392b" opacity="0.18">316L SS / GLASS</text>
+    </svg>
     <div class="proj-label">Ethicon-Sponsored Research · Jan 2026 – Present</div>
     <h1>Bioresorbable Mg Staple<br><em>Characterization</em></h1>
     <div class="proj-meta">

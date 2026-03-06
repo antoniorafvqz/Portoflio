@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ANGEL Gripper | ARVP</title>
   <link rel="stylesheet" href="project.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
@@ -15,6 +15,59 @@
   </nav>
 
   <div class="proj-hero">
+    <!-- Engineering drawing: cable spool geometry -->
+    <svg class="proj-hero-drawing" viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect x="4" y="4" width="272" height="212" fill="none" stroke="#c0392b" stroke-width="0.6" opacity="0.15"/>
+      <rect x="8" y="8" width="264" height="204" fill="none" stroke="#c0392b" stroke-width="0.3" opacity="0.08"/>
+      <text x="14" y="22" font-family="monospace" font-size="7" fill="#c0392b" opacity="0.3">MOTOR SPOOL — FRONT / SECTION</text>
+      <!-- Spool front view -->
+      <!-- Flange left -->
+      <circle cx="75" cy="105" r="44" fill="none" stroke="#c0392b" stroke-width="1.2" opacity="0.25"/>
+      <!-- Hub -->
+      <circle cx="75" cy="105" r="20" fill="none" stroke="#c0392b" stroke-width="1" opacity="0.22"/>
+      <!-- Bore -->
+      <circle cx="75" cy="105" r="8" fill="none" stroke="#c0392b" stroke-width="0.9" opacity="0.25"/>
+      <!-- Cable groove circles -->
+      <circle cx="75" cy="105" r="28" fill="none" stroke="#c0392b" stroke-width="0.6" stroke-dasharray="3,2" opacity="0.16"/>
+      <circle cx="75" cy="105" r="34" fill="none" stroke="#c0392b" stroke-width="0.6" stroke-dasharray="3,2" opacity="0.14"/>
+      <!-- Centerlines -->
+      <line x1="14" y1="105" x2="156" y2="105" stroke="#c0392b" stroke-width="0.5" stroke-dasharray="6,2,1,2" opacity="0.18"/>
+      <line x1="75" y1="42" x2="75" y2="168" stroke="#c0392b" stroke-width="0.5" stroke-dasharray="6,2,1,2" opacity="0.18"/>
+      <!-- Cable exit tangent -->
+      <line x1="75" y1="61" x2="140" y2="40" stroke="#c0392b" stroke-width="0.8" opacity="0.18"/>
+      <text x="142" y="38" font-family="monospace" font-size="5.5" fill="#c0392b" opacity="0.26">CABLE EXIT</text>
+      <!-- Dims -->
+      <line x1="75" y1="105" x2="119" y2="105" stroke="#c0392b" stroke-width="0.5" opacity="0.18"/>
+      <line x1="109" y1="101" x2="109" y2="109" stroke="#c0392b" stroke-width="0.5" opacity="0.18"/>
+      <text x="113" y="103" font-family="monospace" font-size="5.5" fill="#c0392b" opacity="0.25">Ø88 OD</text>
+      <line x1="75" y1="105" x2="83" y2="105" stroke="#c0392b" stroke-width="0.5" opacity="0.16"/>
+      <line x1="83" y1="120" x2="83" y2="90" stroke="#c0392b" stroke-width="0.4" stroke-dasharray="2,2" opacity="0.12"/>
+      <text x="86" y="122" font-family="monospace" font-size="5" fill="#c0392b" opacity="0.22">Ø16 BORE</text>
+      <!-- SECTION VIEW -->
+      <text x="170" y="55" font-family="monospace" font-size="6" fill="#c0392b" opacity="0.26">SECTION</text>
+      <!-- Spool cross-section U-shape -->
+      <path d="M168,65 L168,155 L186,155 L186,95 L222,95 L222,155 L240,155 L240,65 Z" fill="none" stroke="#c0392b" stroke-width="1.1" opacity="0.24"/>
+      <!-- Cable groove in section -->
+      <rect x="186" y="82" width="36" height="13" rx="1" fill="none" stroke="#c0392b" stroke-width="0.7" opacity="0.18"/>
+      <!-- Bore in section -->
+      <line x1="168" y1="105" x2="240" y2="105" stroke="#c0392b" stroke-width="0.5" stroke-dasharray="5,2,1,2" opacity="0.14"/>
+      <!-- Width dim -->
+      <line x1="168" y1="162" x2="240" y2="162" stroke="#c0392b" stroke-width="0.5" opacity="0.18"/>
+      <line x1="168" y1="158" x2="168" y2="166" stroke="#c0392b" stroke-width="0.5" opacity="0.18"/>
+      <line x1="240" y1="158" x2="240" y2="166" stroke="#c0392b" stroke-width="0.5" opacity="0.18"/>
+      <text x="204" y="173" font-family="monospace" font-size="5.5" fill="#c0392b" opacity="0.25" text-anchor="middle">42.0 mm</text>
+      <!-- TPU pocket note -->
+      <rect x="168" y="178" width="108" height="16" fill="none" stroke="#c0392b" stroke-width="0.4" opacity="0.12"/>
+      <text x="172" y="187" font-family="monospace" font-size="5" fill="#c0392b" opacity="0.22">MAT: TPU 95A / FDM PRINT</text>
+      <!-- Title block -->
+      <rect x="8" y="182" width="130" height="30" fill="none" stroke="#c0392b" stroke-width="0.5" opacity="0.14"/>
+      <line x1="8" y1="194" x2="138" y2="194" stroke="#c0392b" stroke-width="0.4" opacity="0.1"/>
+      <line x1="70" y1="182" x2="70" y2="212" stroke="#c0392b" stroke-width="0.4" opacity="0.1"/>
+      <text x="12" y="191" font-family="monospace" font-size="5" fill="#c0392b" opacity="0.22">ANGEL-SPOOL-001</text>
+      <text x="12" y="202" font-family="monospace" font-size="5" fill="#c0392b" opacity="0.18">TAMU ME / REV B</text>
+      <text x="74" y="191" font-family="monospace" font-size="5" fill="#c0392b" opacity="0.22">SCALE 1:2</text>
+      <text x="74" y="202" font-family="monospace" font-size="5" fill="#c0392b" opacity="0.18">TPU 95A</text>
+    </svg>
     <div class="proj-label">Published Research · June 2025 – Present</div>
     <h1>ANGEL — Soft Robotic<br><em>Fruit Harvesting Gripper</em></h1>
     <div class="proj-meta">
